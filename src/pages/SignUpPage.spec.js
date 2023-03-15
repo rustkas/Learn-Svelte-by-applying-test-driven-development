@@ -38,10 +38,17 @@ describe("Sign Up Page", () => {
       const input = screen.getByLabelText('Password Repeat');
       expect(input).toBeInTheDocument();
     });
+
     it("has password type for password repeat input", () => {
       render(SignUpPage);
       const passwordInput = screen.getByLabelText("Password Repeat");
       expect(passwordInput.type).toBe("password");
+    });
+
+    it('has Sign Up button', ()=>{
+      render(SignUpPage);
+      const button = screen.getByRole('button', {name: 'Sign Up'});
+      expect(button).toBeInTheDocument();
     });
   });
 });
