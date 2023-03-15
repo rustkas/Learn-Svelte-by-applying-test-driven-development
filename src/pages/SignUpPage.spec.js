@@ -11,10 +11,14 @@ describe("Sign Up Page", () => {
     });
 
     it('has user input', ()=>{
-      const renderResult = render(SignUpPage);
-      const container = renderResult.container;
+      const {container} = render(SignUpPage);
       const input = container.querySelector('input');
       expect(input).toBeInTheDocument();
+    });
+
+    it('has e-mail input', ()=>{
+      const {container} = render(SignUpPage);
+      expect(container.querySelectorAll('input').length).toBe(2);
     });
   });
 });
