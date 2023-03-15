@@ -9,5 +9,12 @@ describe("Sign Up Page", () => {
       const header = screen.getByRole('heading', {name: 'Sign Up'});
       expect(header).toBeInTheDocument();
     });
+
+    it('has user input', ()=>{
+      const renderResult = render(SignUpPage);
+      const container = renderResult.container;
+      const input = container.querySelector('input');
+      expect(input).toBeInTheDocument();
+    });
   });
 });
