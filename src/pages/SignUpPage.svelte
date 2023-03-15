@@ -3,3 +3,5 @@
 <input id="username"/>
 <label for="e-mail">E-mail</label>
 <input id="e-mail"/>
+<label for="password">Password</label>
+<input id="password" type="password"/>
