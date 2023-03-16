@@ -23,8 +23,7 @@
     "msw": "^1.1.0",
     "svelte": "^3.54.0",
     "svelte-jester": "^2.3.2",
-    "vite": "^4.0.0",
-    "whatwg-fetch": "^3.6.2"
+    "vite": "^4.0.0"
   },
   "jest": {
     "transform": {

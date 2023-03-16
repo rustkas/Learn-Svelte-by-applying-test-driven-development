@@ -2,8 +2,6 @@ import { render, screen } from '@testing-library/svelte';
 import * as SignUpPage from './SignUpPage.svelte';
 import userEvent from "@testing-library/user-event";
 import "@testing-library/jest-dom";
-import axios from 'axios';
-import "whatwg-fetch";
 import {setupServer} from 'msw/node';
 import {rest} from 'msw';
 
